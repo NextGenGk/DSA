@@ -1,5 +1,7 @@
 package Formula;
 
+import DSA_ONE.Recursion.ReverseString;
+
 public class Formula {
 
  //1//
@@ -128,24 +130,24 @@ public class Formula {
     //        // (ii) We do not consider current character as part of current subset
     //        powerSet(str,i+1,curr);
 
-// No of ways NxM Matrix
+//16// No of ways NxM Matrix
 //   Recursive
 //        return countPaths(m-1, n) + countPaths(m, n-1);
 
 
-//   Find Trailing Zeroes
+//17//   Find Trailing Zeroes
 // Looping
 //       for (int i=5; i<=n; i=i*5) {
 //           result = result + n/i;
 //       }
 
 
-// GCD
+//18// GCD
 // Recursive Case
 //        return gcd(b, a%b);
 
 
-// Modulo Arithmetic
+//19// Modulo Arithmetic
 //     // Function
 //    public static long fastPower(long a, long b, int n) {
 //        long result = 1;
@@ -161,14 +163,51 @@ public class Formula {
 //    }
 
 
-// Sieve of Eratosthenes
+//20// Sieve of Eratosthenes
 // // looping to root N
 //        for (int i=2; i<=n/2; i++) {
 //            for (int j=2*i; j<=n; j=j+i) {
 //                isPrime[j] = false;
 //            }
 
-//  Josephus Problem
+//21//  Josephus Problem
 // // Recursive Case
 //        return (josephus(n - 1, k) + k ) % n;
+
+//22// Tower Of Hanoi
+/*
+// Recursive Case
+        // Source -> Helper (using Destination as a Helper)
+        towerOfHanoi(noOfDisks-1, src, dest, helper);
+
+        // Print
+        System.out.println("Transfer disk " + noOfDisks + " from Source " + src + " to dest " + dest);
+
+        // Recursive Case
+        // Helper -> Destination (using Source as a Helper)
+        towerOfHanoi(noOfDisks-1, helper, src, dest);
+ */
+
+//23//
+/*
+// ReverseString
+printReverse(str, index-1);
+ */
+
+//24//
+/*
+// Checking Element
+        char currChar = str.charAt(index);
+        if (currChar == element) {
+            if (first == -1) {
+                first = index;
+            }
+            else {
+                last = index;
+            }
+        }
+
+        // Recursive Case
+        findOccurance(str, index+1, element);
+ */
 }
