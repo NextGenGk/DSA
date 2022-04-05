@@ -210,4 +210,64 @@ printReverse(str, index-1);
         // Recursive Case
         findOccurance(str, index+1, element);
  */
+
+//25//
+/*
+  // Checking Condition
+        // If arr[index] is greater than equal to arr[index+1], it means array is unsorted
+        if (arr[index] >= arr[index+1]) {
+            // array is unsorted
+            return false;
+        }
+
+        // Recursive Case
+        return isSorted(arr, index+1);
+ */
+
+//26//
+/*
+    // Base Case + Print
+        if (idx == str.length()) {
+            for (int i=0; i<count; i++) {
+                newString = newString + 'x';
+            }
+            System.out.println(newString);
+            return;
+        }
+
+        // Checking
+        char currChar = str.charAt(idx);
+        if (currChar == 'x') {
+            count++;
+
+            // Recursive Case
+            moveAllX(str, idx+1, count, newString);
+        }
+        else {
+            newString = newString + currChar;
+
+            // Recursive Case
+            moveAllX(str, idx+1, count, newString);
+        }
+*/
+
+//27//
+/*
+char currChar = str.charAt(idx);
+        // Map index calculate = map[currChar - 'a']
+        // got the true meaning, first time we visit, it means no currCharacter add on new String
+        if (map[currChar - 'a'] == true) {
+            // Recursive Case
+            removeDuplicates(str, idx+1, newString);
+        }
+        // False meaning is not found, it means currCharacter add on new String
+        // and isVisited is true
+        else {
+            newString = newString + currChar;
+            map[currChar - 'a'] = true;
+            // Recursive Case
+            removeDuplicates(str, idx+1, newString);
+        }
+ */
+
 }
