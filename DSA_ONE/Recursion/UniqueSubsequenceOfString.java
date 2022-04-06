@@ -35,3 +35,5 @@ public class UniqueSubsequenceOfString {
         printUniqueSubsequence(str,0,"", set);
     }
 }
+
+// Time - 0(2^n)

@@ -29,3 +29,5 @@ public class PrintKeypadCombination {
         printCombination(str, 0, " ");
     }
 }
+
+// Time - 0(4^n)
