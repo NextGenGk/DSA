@@ -14,7 +14,7 @@ public class MoveAllXToLast {
             return;
         }
 
-        // Checking
+        // Storing current character with index & Checking
         char currChar = str.charAt(idx);
         if (currChar == 'x') {
             count++;

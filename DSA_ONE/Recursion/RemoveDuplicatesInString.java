@@ -15,6 +15,7 @@ public class RemoveDuplicatesInString {
         }
 
 
+        // Storing current character with index
         char currChar = str.charAt(idx);
         // Map index calculate = map[currChar - 'a']
         // got the true meaning, first time we visit, it means no currCharacter add on new String

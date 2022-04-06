@@ -10,6 +10,7 @@ public class SubsequenceOfString {
             return;
         }
 
+        // Storing current character with index
         char currChar = str.charAt(idx);
 
         // Recursive Case
