@@ -21,21 +21,21 @@ public class PermutationOfString {
             return;
         }
 
-        // Looping
-        for (int i=l; i<=r; i++) {
-            // Calling Swap function
-            swap(s, l, r);
-            // Recursive Case
-            permute(s, l+1, r);
-            // BackTracking
-            swap(s, l, r);
+            // Looping
+            for (int i = l; i <= r; i++) {
+                // Calling Swap function
+                s = swap(s, l, i);
+                // Recursive Case
+                permute(s, l + 1, r);
+                // BackTracking
+                s = swap(s, l, i);
+            }
         }
-    }
 
     // Main Function
     public static void main(String[] args)
     {
-        String str = "ABC";
+        String str = "abc";
         int n = str.length();
         PermutationOfString permutation = new PermutationOfString();
         permutation.permute(str, 0, n-1);

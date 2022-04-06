@@ -12,11 +12,12 @@ public class NoOfWays_NxM_Matrix {
 
         // Recursive
         return countPaths(m-1, n) + countPaths(m, n-1);
+        // bottom + right
     }
 
     // Main Function
     public static void main(String[] args) {
-        System.out.println(countPaths(5,5));
+        System.out.println(countPaths(3,3));
     }
 }
 
