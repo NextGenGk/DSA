@@ -26,10 +26,13 @@ public class GCD {
 }
 
 // Time -  O(log(min(a, b))
-// Space - o(n)
+// Space - 0(n)
 
-// Euclid’s Algorithm: It is an efficient method for finding the GCD ( Greatest Common Divisor) of two integers.
+// Euclid’s Algorithm: It is an efficient method for finding the GCD ( The Greatest Common Divisor) of two integers.
 // The time complexity of this algorithm is O(log(min(a, b)).
 
 // Formula
+// gcd(a, 0) = a
 // gcd(a, b) = gcd(b, a%b)
+
+// GCD is the largest positive integer that divides the number without a remainder

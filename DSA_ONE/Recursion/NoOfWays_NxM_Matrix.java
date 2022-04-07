@@ -3,15 +3,22 @@ package DSA_ONE.Recursion;
 public class NoOfWays_NxM_Matrix {
 
     // Function
-    public static int countPaths(int m, int n) {
+    // Returns count of possible paths to reach
+    // cell at row number m and column number n
+    // from the topmost leftmost cell (cell at 1, 1)
+    public static int countPaths(int n, int m) {
 
         // Base Case
-        if (m == 1 || n == 1) {
+        // If either given row number is first or
+        // given column number is first
+        if (n == 1 || m == 1) {
             return 1;
         }
 
         // Recursive
-        return countPaths(m-1, n) + countPaths(m, n-1);
+        // If diagonal movements are allowed then
+        // the last addition is required.
+        return countPaths(n-1, m) + countPaths(n, m-1);
         // bottom + right
     }
 

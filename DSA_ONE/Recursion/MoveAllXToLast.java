@@ -18,13 +18,11 @@ public class MoveAllXToLast {
         char currChar = str.charAt(idx);
         if (currChar == 'x') {
             count++;
-
             // Recursive Case
             moveAllX(str, idx+1, count, newString);
         }
         else {
             newString = newString + currChar;
-
             // Recursive Case
             moveAllX(str, idx+1, count, newString);
         }

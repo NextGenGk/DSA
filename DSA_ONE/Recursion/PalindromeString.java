@@ -6,10 +6,12 @@ public class PalindromeString {
     private static boolean isPalindrome(String str, int l, int r) {
 
         // Base Case
+        // For even numbers
         if (l >= r) {
             return true;
         }
 
+        // if left is not equal to right , then return false
         if (str.charAt(l) != str.charAt(r)) {
             return false;
         }

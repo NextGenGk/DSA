@@ -39,3 +39,5 @@ public class FindOccurance {
 
 // Time - 0(n)
 // n represents the length of String
+
+// Find the first and last occurance of an element n given String
