@@ -37,4 +37,4 @@ public class DecimalToBinary {
 
 // Formula
 // f(n) = n%2 + 10*f(n/2)
-//     remainder + multiply
+//     remainder + 10 * quotient
