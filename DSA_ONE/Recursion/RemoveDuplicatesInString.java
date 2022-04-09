@@ -18,7 +18,9 @@ public class RemoveDuplicatesInString {
         // Storing current character with index
         char currChar = str.charAt(idx);
         // Map index calculate = map[currChar - 'a']
-        // got the true meaning, first time we visit, it means no currCharacter add on new String
+        // got the true meaning, it is visited, it means no currCharacter add on new String
+        // 'a' - 'a' = 0
+        // 'b' - 'b' = 1
         if (map[currChar - 'a'] == true) {
             // Recursive Case
             removeDuplicates(str, idx+1, newString);

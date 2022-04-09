@@ -13,13 +13,16 @@ public class TowerOfHanoi {
 
         // Recursive Case
         // Source -> Helper (using Destination as a Helper)
+        // n-1 disks transfer to helper
         towerOfHanoi(noOfDisks-1, src, dest, helper);
 
         // Print
+        // 1 disk src -> dest
         System.out.println("Transfer disk " + noOfDisks + " from Source " + src + " to dest " + dest);
 
         // Recursive Case
         // Helper -> Destination (using Source as a Helper)
+        // n-1 disks transfer to dest using src as a helper
         towerOfHanoi(noOfDisks-1, helper, src, dest);
     }
 
