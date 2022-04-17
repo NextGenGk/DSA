@@ -18,6 +18,7 @@ public class FindOccurance {
         // Checking Element
         char currChar = str.charAt(index);
         if (currChar == element) {
+            // first == -1, it means we find our first element, because first = -1 is initialized value
             if (first == -1) {
                 first = index;
             }

@@ -6,6 +6,7 @@ public class PrintKeypadCombination {
     public static String[] keypad = {".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
 
     // Function
+    // number string = 23
     public static void printCombination(String numStr, int idx, String combination) {
 
         // Base Case

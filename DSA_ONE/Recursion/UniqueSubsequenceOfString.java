@@ -7,6 +7,7 @@ public class UniqueSubsequenceOfString {
     public static void printUniqueSubsequence(String str, int idx, String newString, HashSet<String> set) {
 
         // Base Case
+        // Same as Subsequence
         if (idx == str.length()) {
             if (set.contains(newString)) {
                 return;
@@ -18,6 +19,7 @@ public class UniqueSubsequenceOfString {
             }
         }
 
+        // Storing current character with index
         char currChar = str.charAt(idx);
 
         // Recursive Case

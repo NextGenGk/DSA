@@ -1,6 +1,6 @@
 package DSA_ONE.Recursion;
 
-public class SubsequenceOfString {
+public class SubsequenceOrPowerSetOfString {
 
     public static void printSubsequence(String str, int idx, String newString) {
 
@@ -9,6 +9,8 @@ public class SubsequenceOfString {
             System.out.println(newString);
             return;
         }
+
+        // Recursive Case
 
         // Storing current character with index
         char currChar = str.charAt(idx);
@@ -19,6 +21,13 @@ public class SubsequenceOfString {
 
         // or not to be
         printSubsequence(str, idx+1, newString);
+
+//   Two cases for every character
+//   (i) We consider the character as part of current subset
+//    powerSet(str, i+1, curr + str.charAt(i));
+//   (ii) We do not consider current character as part of current subset
+//    powerSet(str,i+1,curr);
+
     }
 
     public static void main(String[] args) {

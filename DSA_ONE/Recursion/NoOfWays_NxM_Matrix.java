@@ -15,6 +15,12 @@ public class NoOfWays_NxM_Matrix {
             return 1;
         }
 
+        // move downwards
+//        int downPaths = countPaths(i+1,j);
+
+        // move right
+//        int rightPaths = countPaths(i, j+1);
+
         // Recursive
         // If diagonal movements are allowed then
         // the last addition is required.

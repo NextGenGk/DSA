@@ -17,9 +17,11 @@ public class PlaceTilesSize_1xM_FloorSize_NxM {
 
         // Recursive Case
         // Place Vertically (n-1)
+        // int verticalPlacement = placeTiles(n-m, m);
         int verticalPlacement = placeTiles(n-1, m);
 
         // Place Horizontally (n-2)
+        // int verticalPlacement = placeTiles(n-1, m);
         int horizontalPlacement = placeTiles(n-2, m);
 
         // Return

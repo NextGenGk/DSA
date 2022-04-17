@@ -26,6 +26,6 @@ public class JosephusProblem {
 
 /*
 After the first person (kth from beginning) is killed, n-1 persons are left. So we call josephus(n – 1, k) to get
-the position with n-1 persons. But the position returned by josephus(n – 1, k) will consider the position starting
+the position with n-1 persons. But the position ret   will consider the position starting
 from k%n + 1. So, we must make adjustments to the position returned by josephus(n – 1, k).
  */
