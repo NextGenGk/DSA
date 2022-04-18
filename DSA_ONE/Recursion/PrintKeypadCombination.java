@@ -17,11 +17,11 @@ public class PrintKeypadCombination {
 
         // Storing current character with index
         char currChar = numStr.charAt(idx);
+        // Find Mapping
         String mapping = keypad[currChar - '0'];
 
         for (int i=0; i<mapping.length(); i++) {
-            printCombination(numStr, idx+1, combination+mapping
-                    .charAt(i));
+            printCombination(numStr, idx+1, combination+mapping.charAt(i));
         }
     }
 
